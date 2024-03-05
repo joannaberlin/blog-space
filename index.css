@@ -7,5 +7,27 @@ body {
 body {
 	font-family: 'DM Serif Display', serif;
 	font-weight: 400;
-	font-style: normal;
+}
+
+p {
+	font-weight: normal;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+nav {
+	background-color: rgb(232, 205, 169);
+	padding: 5px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+}
+
+nav > h3 {
+	margin: 0;
+}
+
+#blog-list {
+	padding: 30px 10px 10px;
 }
