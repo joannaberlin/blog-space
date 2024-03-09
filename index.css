@@ -15,7 +15,7 @@ body {
 	margin-bottom: 30px;
 }
 
-#body_wrapper:after {
+.body_wrapper:after {
 	position: absolute;
 	content: '';
 	background: black;
