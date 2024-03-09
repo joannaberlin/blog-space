@@ -1,5 +1,5 @@
 const postsWrapper = document.getElementById('blog-list');
-const newPost = document.getElementById('new-post');
+const form = document.getElementById('new-post');
 const titleInput = document.getElementById('post-title');
 const bodyInput = document.getElementById('post-body');
 let postsArr = [];
@@ -23,7 +23,7 @@ fetch('https://apis.scrimba.com/jsonplaceholder/posts')
 		renderPosts();
 	});
 
-newPost.addEventListener('submit', (e) => {
+form.addEventListener('submit', (e) => {
 	e.preventDefault();
 	const postTitle = titleInput.value;
 	const postBody = bodyInput.value;
@@ -43,7 +43,8 @@ newPost.addEventListener('submit', (e) => {
 		.then((post) => {
 			postsArr = [post, ...postsArr];
 			renderPosts();
-			titleInput.value = '';
-			bodyInput.value = '';
+			// titleInput.value = '';
+			// bodyInput.value = '';
+			form.reset();
 		});
 });
